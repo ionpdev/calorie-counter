@@ -1,11 +1,11 @@
-## Calorie Counter App
+# Calorie Counter App
 
 ## Functional Programing with JavaScript
 
 ## Babel and Webpack, Tachyons, Hyperscript, Virtual-DOM, Ramda
 
 
-## Final App:
+# Final App:
 ## Initial State
 
 ![Initial State](/img/initial_state.png)
@@ -16,8 +16,8 @@
 
 ## Update Meals
 
-![Update Meals](/images/update.png)
+![Update Meals](/img/update.png)
 
 ## Added Meals
 
-![Added Meals](/images/added_meals.png)
+![Added Meals](/img/added_meals.png)
