@@ -36,8 +36,13 @@ view
 ## Update / Interactions
 
 click add meal
+
 meal input
+
 calorie input
-click save (add / update)
+
+click save (add / update
+
 click edit icon
+
 click delete icon
