@@ -6,6 +6,8 @@ import {
     mealInputMsg,
     caloriesInputMsg,
     saveMealMsg,
+    deleteMealMsg,
+    editMealMsg,
  } from './Update'
 
 const { 
@@ -21,7 +23,8 @@ const {
     tbody,
     tr,
     th,
-    td, 
+    td,
+    i, 
 } = hh(h)
 
 function cell(tag, className, value) {
@@ -40,7 +43,16 @@ function mealRow(dispatch, className, meal) {
     return tr({ className }, [
         cell(td, 'pa2', meal.description),
         cell(td, 'pa2 tr', meal.calories),
-        cell(td, 'pa2 tr', []),
+        cell(td, 'pa2 tr', [
+            i({
+                className: 'ph1 fa fa-trash-o pointer',
+                onclick: () => dispatch(deleteMealMsg(meal.id)),
+            }),
+            i({
+                className: 'ph1 fa fa-pencil-square-o pointer',
+                onclick: () => dispatch(editMealMsg(meal.id))
+            }),
+        ]),
     ])
 }
 
@@ -148,7 +160,7 @@ function view(dispatch, model) {
         h1({ className: 'f2 pv2 bb' }, 'Calorie Counter'),
         formView(dispatch, model),
         tableView(dispatch, model.meals),
-        pre(JSON.stringify(model, null, 2)),
+        // pre(JSON.stringify(model, null, 2)),
     ])
 }
 
