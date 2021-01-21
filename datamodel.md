@@ -23,14 +23,23 @@ model = {
 ## View Functions
 
 view
+
   formView
+
     fieldSet
+
     buttonSet
+
   tableView
+
     tableHeader
+
     mealsBody
+
       mealRow
+
         cell
+        
       totalRow
 
 ## Update / Interactions
