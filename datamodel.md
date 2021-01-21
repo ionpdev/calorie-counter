@@ -2,7 +2,7 @@
 
 ## Data Model
 
-Example Model/Shape:
+Model/Shape:
 
 ```javascript
 meal = {
@@ -23,12 +23,21 @@ model = {
 ## View Functions
 
 view
-formView
-fieldSet
-buttonSet
-tableView
-tableHeader
-mealsBody
-mealRow
-cell
-totalRow
+  formView
+    fieldSet
+    buttonSet
+  tableView
+    tableHeader
+    mealsBody
+      mealRow
+        cell
+      totalRow
+
+## Update / Interactions
+
+click add meal
+meal input
+calorie input
+click save (add / update)
+click edit icon
+click delete icon
